@@ -1,13 +1,13 @@
 {
-	"name": "react-native-largelist-v3",
+	"name": "@sjmancebo/react-native-largelist-v3",
 	"version": "3.0.14",
 	"private": false,
 	"description": "The best performance large list component which is much better than SectionList for React Native.",
-	"author": "bolan9999 <bolan999999@gmail.com>",
+	"author": "sjmancebo",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:bolan9999/react-native-largelist.git"
+		"url": "git@github.com:smancebo/react-native-largelist.git"
 	},
 	"keywords": [
 		"react-native",
@@ -21,9 +21,9 @@
 		"swipable flatlist"
 	],
 	"bugs": {
-		"url": "https://github.com/bolan9999/react-native-largelist/issues"
+		"url": "https://github.com/smancebo/react-native-largelist/issues"
 	},
-	"homepage": "https://github.com/bolan9999/react-native-largelist",
+	"homepage": "https://github.com/smancebo/react-native-largelist",
 	"peerDependencies": {
 		"react": "^16.3.1",
 		"react-native": "^0.50.0",
