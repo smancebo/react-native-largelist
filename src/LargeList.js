@@ -53,7 +53,7 @@ export class LargeList extends React.PureComponent<LargeListPropType> {
     }
   }
 
-  componentDidUpdate(props: LargeListPropType) {
+  UNSAFE_componentWillReceiveProps(props: LargeListPropType) {
     if (
       props.onNativeContentOffsetExtract &&
       this.props.onNativeContentOffsetExtract !== props.onNativeContentOffsetExtract

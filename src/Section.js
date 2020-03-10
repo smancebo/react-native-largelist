@@ -25,7 +25,7 @@ export class Section extends React.Component<SectionPropType> {
     this.updateOffset(offset, true);
   }
 
-  componentDidUpdate(next: SectionPropType) {
+  UNSAFE_componentWillReceiveProps(next: SectionPropType) {
     this.updateOffset(next.offset, false, next);
   }
 

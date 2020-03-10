@@ -26,7 +26,7 @@ export class StickyForm extends React.PureComponent<StickyFormPropType> {
     this.obtainOffset();
   }
 
-  componentDidUpdate(props: LargeListPropType) {
+  UNSAFE_componentWillReceiveProps(props: LargeListPropType) {
     if (
       props.onNativeContentOffsetExtract &&
       this.props.onNativeContentOffsetExtract !== props.onNativeContentOffsetExtract

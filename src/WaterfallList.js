@@ -36,7 +36,7 @@ export class WaterfallList extends React.PureComponent<WaterfallListType> {
     this.obtainOffset();
   }
 
-  componentDidUpdate(prevProps: LargeListPropType) {
+  UNSAFE_componentWillReceiveProps(prevProps: LargeListPropType) {
     if (
       prevProps.onNativeContentOffsetExtract &&
       this.props.onNativeContentOffsetExtract !== prevProps.onNativeContentOffsetExtract

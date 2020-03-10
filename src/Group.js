@@ -41,7 +41,7 @@ export class Group extends React.Component<GroupPropType> {
     !init && this.forceUpdate();
   }
 
-  componentDidUpdate(next: GroupPropType) {
+  UNSAFE_componentWillReceiveProps(next: GroupPropType) {
     if (next.offset) {
       this._offset = null;
       this.contentConversion(next.offset);
