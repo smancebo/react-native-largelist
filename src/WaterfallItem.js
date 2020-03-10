@@ -21,7 +21,7 @@ export class WaterfallItem extends React.Component<WaterfallItemType> {
     this.updateOffset(props.offset, true);
   }
 
-  componentWillReceiveProps(next: WaterfallItemType) {
+  componentDidUpdate(next: WaterfallItemType) {
     this.updateOffset(next.offset, false, next);
   }
 
