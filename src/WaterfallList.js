@@ -36,10 +36,10 @@ export class WaterfallList extends React.PureComponent<WaterfallListType> {
     this.obtainOffset();
   }
 
-  componentWillReceiveProps(props: LargeListPropType) {
+  componentDidUpdate(prevProps: LargeListPropType) {
     if (
-      props.onNativeContentOffsetExtract &&
-      this.props.onNativeContentOffsetExtract !== props.onNativeContentOffsetExtract
+      prevProps.onNativeContentOffsetExtract &&
+      this.props.onNativeContentOffsetExtract !== prevProps.onNativeContentOffsetExtract
     ) {
       this.obtainOffset();
     }
