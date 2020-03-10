@@ -6,7 +6,7 @@
  * Description:
  */
 
-declare module "react-native-largelist-v3" {
+declare module "rn-largelist-v3" {
   import { SpringScrollViewPropType, Offset } from "react-native-spring-scrollview";
   import * as React from "react";
   import { Animated } from "react-native";

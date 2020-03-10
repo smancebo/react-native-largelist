@@ -1,6 +1,6 @@
 {
   "name": "@sjmancebo/rn-large-list-v3",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
