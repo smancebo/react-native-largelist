@@ -1,6 +1,6 @@
 {
 	"name": "rn-largelist-v3",
-	"version": "3.0.15",
+	"version": "3.0.16",
 	"description": "The best performance large list component which is much better than SectionList for React Native.",
 	"author": "sjmancebo",
 	"license": "MIT",
