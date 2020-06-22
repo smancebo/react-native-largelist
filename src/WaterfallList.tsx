@@ -10,10 +10,11 @@
 import React from "react";
 import type { LargeListPropType, Offset, Size, WaterfallListType } from "./Types";
 import { SpringScrollView } from "react-native-spring-scrollview";
-import { Animated, Dimensions, StyleSheet, View, LayoutAnimation, Platform } from "react-native";
+import { Dimensions, StyleSheet, View, LayoutAnimation, Platform } from "react-native";
 import { styles } from "./styles";
 import { idx } from "./idx";
 import { WaterfallItem } from "./WaterfallItem";
+import Animated from 'react-native-reanimated';
 
 const screenLayout = Dimensions.get("window");
 const screenHeight = Math.max(screenLayout.width, screenLayout.height);
@@ -26,20 +27,22 @@ export class WaterfallList extends React.PureComponent<WaterfallListType> {
   _orgOnFooterLayout;
   _contentOffsetY = 0;
   _nativeOffset;
-  _offset: Animated.Value;
+  _offset: Animated.Value<number>;
   _itemRefs: [];
   _shouldUpdateContent = true;
   _scrollView=React.createRef();
+  _lastTick: number;
 
-  constructor(props) {
+  constructor(props: WaterfallListType) {
     super(props);
     this.obtainOffset();
   }
 
-  UNSAFE_componentWillReceiveProps(prevProps: LargeListPropType) {
+  UNSAFE_componentWillReceiveProps(prevProps: WaterfallListType) {
+    const { onNativeContentOffsetExtract } = this.props;
     if (
       prevProps.onNativeContentOffsetExtract &&
-      this.props.onNativeContentOffsetExtract !== prevProps.onNativeContentOffsetExtract
+      onNativeContentOffsetExtract !== prevProps.onNativeContentOffsetExtract
     ) {
       this.obtainOffset();
     }
