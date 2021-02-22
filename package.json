@@ -1,6 +1,6 @@
 {
   "name": "@sjmancebo/rn-large-list-v3",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
@@ -14,7 +14,7 @@
     "react-native-gesture-handler": "^1.1.0",
     "react-native-largelist-v3": "^3.0.14",
     "react-native-reanimated": "^1.9.0",
-    "react-native-spring-scrollview": "^2.0.21",
+    "rn-spring-scrollview-v2": "^2.1.3",
     "react-navigation": "^3.5.1"
   },
   "devDependencies": {

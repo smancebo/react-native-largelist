@@ -10,7 +10,7 @@
 import React from "react";
 import { Animated, StyleSheet, Dimensions, Platform } from "react-native";
 import { styles } from "./styles";
-import { SpringScrollView } from "react-native-spring-scrollview";
+import { SpringScrollView } from "rn-spring-scrollview-v2";
 import type { IndexPath, LargeListPropType, Offset } from "./Types";
 import { Group } from "./Group";
 import { idx } from "./idx";
